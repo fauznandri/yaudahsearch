@@ -163,3 +163,5 @@ cython_debug/
 collections/
 index/
 qrels-folder/
+lsi.model
+ranker.joblib
