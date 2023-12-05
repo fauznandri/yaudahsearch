@@ -5,6 +5,9 @@ Faculty of Computer Science Universitas Indonesia
 ## How to Install
 - git clone https://github.com/fauznandri/yaudahsearch.git
 - extract collection-index-qrels.zip using 'extract here'
+- pip install -r requirements.txt
+- python manage.py runserver
 
 ## NOTE ##
-The initialization will take time as it will run the indexing and train the letor everytime it initializes.
+The initialization will take time as it will run the indexing and train the letor everytime it initializes. 
+Estimated time is about ~10 minutes.
