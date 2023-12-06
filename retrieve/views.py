@@ -6,7 +6,6 @@ from .library.compression import VBEPostings
 
 import sys
 import os
-import re
 
 def index(request):
     query = request.GET.get('search_bar')
@@ -26,7 +25,7 @@ def index(request):
         result = {}
         sys.path.append(os.path.join(os.path.dirname(__file__)))
         
-        result_raw = retrieve(100, query)
+        result_raw = retrieve(100, query, BSBI_instance)
 
         if result_raw == None:
             context = {

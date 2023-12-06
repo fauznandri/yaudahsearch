@@ -39,7 +39,8 @@ class Letor:
         text = line.split(" ")
         id = text[0]
         content = text[1:-1]
-        res[id] = content
+        # res[id] = content
+        res[id] = [x.lower() for x in content] # making all word in document lower case
     return res
 
   def dataset_from_txt(self, file_dir, queries, docs):
@@ -118,9 +119,6 @@ class Letor:
                         objective="lambdarank",
                         boosting_type = "gbdt",
                         # boosting_type = "rf",
-                        bagging_freq = 1,
-                        bagging_fraction = 0.6,
-                        feature_fraction = 0.8,
                         n_estimators = 200,
                         importance_type = "gain",
                         metric = "ndcg",
@@ -128,7 +126,7 @@ class Letor:
                         learning_rate = 0.01,
                         max_depth = 5,
                         # max_depth = 3,
-                        verbose = 10, #uncomment if needed to be verbose
+                        # verbose = 10, #uncomment if needed to be verbose
                         n_jobs = 8,
                         # device = "gpu"
                         )
