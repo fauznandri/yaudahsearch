@@ -160,6 +160,7 @@ cython_debug/
 #.idea/
 
 # Collection Folders
+.vercel
 collections/2
 collections/3
 collections/4
@@ -167,4 +168,5 @@ collections/5
 collections/6
 collections/7
 collections/8
+collections/1
 lsi.model
