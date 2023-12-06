@@ -24,9 +24,9 @@ BSBI_instance = BSBIIndex(data_dir=os.path.join(this_dir, 'library/collections')
 
 BSBI_instance.do_indexing()
 
-# print("Tunggu lagi, sedang training letor...")
-# letor = Letor()
+print("Tunggu lagi, sedang training letor...")
+letor = Letor()
     
-# letor.train("qrels-folder/train_queries.txt", 
-#             "qrels-folder/train_docs.txt", 
-#             "qrels-folder/train_qrels.txt")
+letor.train("qrels-folder/train_queries.txt", 
+            "qrels-folder/train_docs.txt", 
+            "qrels-folder/train_qrels.txt")
