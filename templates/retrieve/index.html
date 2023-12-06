@@ -77,10 +77,10 @@
             <p class="text-left mb-2">About {{ result_count }} results</p>
         {% endwith %}
 
-        {% for doc_id, text in result.items %}
-            <a href="{% url 'retrieve:content' doc_id %}" class="title-text">{{ doc_id }}.txt</a>
+        {% for doc_id, docname_text in result.items %}
+            <a href="{% url 'retrieve:content' doc_id %}" class="title-text">{{ docname_text.0 }}</a>
             <br>
-            <p class="txt-text">{{ text.1|truncatechars:270 }}</p>
+            <p class="txt-text">{{ docname_text.1|truncatechars:270 }}</p>
             <br>
         {% endfor %}
         {% endif %}
