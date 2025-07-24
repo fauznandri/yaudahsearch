@@ -1,5 +1,5 @@
 # YaudahSearch
-Final Project for Information Retrieval Course Odd Semester AY 2023/2024     
+Final Project for Information Retrieval Course Odd Semester AY 2023/2024
 Faculty of Computer Science Universitas Indonesia
 
 ## How to Install
@@ -12,6 +12,14 @@ Faculty of Computer Science Universitas Indonesia
 An information retrieval model built based on the inverted index data structure and an implementation of TF-IDF retrieval scheme. \
 Used MPStemmer (https://github.com/ariaghora/mpstemmer) for stemming and LightGBM (https://lightgbm.readthedocs.io/en/stable/) for learning-to-rank SERP optimization. \
 The application it self was built using Django version 4.2.7
+
+## Screenshots
+The initialization process will look like this in the terminal
+![image](images/yaudahsearch-process.png)
+
+These are screenshots of this app in action
+![image](images/yaudahsearch-result.png)
+
 
 ## NOTE ##
 The initialization will take time as it will run the indexing and train the letor everytime it initializes. 
